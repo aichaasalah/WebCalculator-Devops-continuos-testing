@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <form action="/add" method="get">
+        <input type="number" name="a" placeholder="First Number" required>
+        <input type="number" name="b" placeholder="Second Number" required>
+        <button type="submit">Add</button>
+    </form>
+
+    <form action="/subtract" method="get">
+        <input type="number" name="a" placeholder="First Number" required>
+        <input type="number" name="b" placeholder="Second Number" required>
+        <button type="submit">Subtract</button>
+    </form>
+</body>
+</html>
